@@ -1,0 +1,197 @@
+
+/*
+* Style Overrides for Bootstrap Components
+*/
+
+/* Navbar */
+.navbar-expand-lg .navbar-nav .nav-link {
+color: #fff;
+font-size: 1rem;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+position: relative;
+overflow: hidden;
+}
+.portfolio-item .portfolio-link { display: block; }
+
+.portfolio-item img {
+transition: all 0.2s;
+}
+
+.portfolio-item:hover img {
+transform: scale(1.1);
+}
+
+.portfolio-item h4 {
+font-weight: 700;
+margin-bottom: 1em;
+}
+
+.portfolio-item .portfolio-caption {
+position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 2em;
+}
+
+.portfolio-item .portfolio-caption:hover {
+background-color: rgba(0, 0, 0, 0.75);
+}
+
+.portfolio-item .portfolio-caption .portfolio-caption-heading {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 0.5em;
+}
+
+.portfolio-item .portfolio-caption .portfolio-caption-subheading {
+font-size: 1rem;
+font-weight: 400;
+margin-bottom: 0.75em;
+}
+
+/* Contact Form */
+#contactForm input,
+#contactForm textarea {
+padding: 1rem;
+}
+
+#contactForm textarea {
+resize: none;
+}
+
+/* Footer */
+.footer {
+padding: 2em 0;
+}
+
+/* Responsive Media Queries */
+
+/* Extra small devices (phones, up to 576px) */
+@media (max-width: 575.98px) {
+
+/* Navbar */
+.navbar-expand-sm .navbar-nav .nav-link {
+font-size: 0.875rem;
+}
+
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+
+/* Navbar */
+.navbar-expand-md .navbar-nav .nav-link {
+font-size: 0.875rem;
+}
+
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.C {width: 76%; background-color: #f44336;}
+.Mircosoft_word {width: 80%; background-color: #808080;}
+.Mircosoft_excel {width: 80%; background-color: #808080;}
+.Mircosoft_powerpoint {width: 80%; background-color: #808080;}
+.graphic_design {width: 60%; background-color: #808080;}

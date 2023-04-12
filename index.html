@@ -1,0 +1,221 @@
+<DOCTYPE html>
+    <lang="en">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dynamic Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+            integrity="sha512-McW+k17TLXl+OZGJjKgYS1flF7xRwC55GIrKt0ivuzVkGLzbbQb3qZ0xy0LjmjucdJGRT2m3pfJ3E7SZtt5lng=="
+            crossorigin="anonymous" />
+
+        <!--Custom CSS file -->
+
+        <link rel="stylesheet" href="tae2.css" />
+        </head>
+
+        <!-- Navbar -->
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+            <a> SHREEYA DUMORE <br> </a>
+
+            <a href="#">About</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact me </a>
+
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+            style=" width:auto; right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>SHREEYA DUMORE</b></h1>
+            <p>I am an engineering student. WAITING TO BECOME A WEB DEVELOPER !!</p>
+            <img src="../Development/asset/MY PHOTO.png" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display:block;width:30%;margin:auto;">
+
+        </header>
+
+
+        <!-- Header -->
+
+        <header class="bg-primary text-white">
+            <div class="container text-center">
+                <h1>Welcome to my Portfolio Website</h1>
+                <p class="lead">Check out my portfolio and feel free to contact me with any questions or suggestions.
+                </p>
+            </div>
+        </header>
+        <br>
+        <br>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2> ABOUT </h2>
+                        <p class="lead text-muted"> I am Shreeya Dumore studying at GH Raisoni College of Engineering,
+                            Nagpur. Currently, I’m pursuing a B-tech in information technology. My interest and
+                            enthusiasm in the field of web development motivate me to learn new technology.
+                            <br> I am always looking for opportunities that help me to enhance my skill and helps me to
+                            learn new things which will help me to develop myself more and more.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <!--education-->
+        <h1>Education</h1>
+        <p>
+        <h3>Bachelor of Engineering (B.E), Information Technology <br></h3>
+        G. H. Raisoni College Of Engineering<br>
+        2020 - 2024 <br>
+        CGPA: 8.86/10 <br><br>
+
+        <h3>Senior Secondary (XII), Science</h3>
+        Shikshan Maharshi Late Shrihari Jiwatode Junior College, Chandrapur, Maharashtra <br>
+        (STATE BOARD board) <br>
+        Year of completion: 2020 <br>
+        Percentage: 70.62% <br>
+
+        <h3>Secondary (X)</h3>
+        BJM Carmel Academy, Chandrapur, Maharashtra <br>
+        (CBSE board)<br>
+        Year of completion: 2018<br>
+        Percentage: 75.80% <br>
+
+        </p>
+
+
+
+        <!--SKILL -->
+        <h1>My Skills</h1>
+
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">80%</div>
+        </div>
+
+
+        <p>C</p>
+        <div class="container">
+            <div class="skills C">76%</div>
+        </div>
+
+        <p>Mircosoft_word</p>
+        <div class="container">
+            <div class="skills Mircosoft_word ">86%</div>
+        </div>
+
+        <p>Mircosoft_powerpoint</p>
+        <div class="container">
+            <div class="skills Mircosoft_powerpoint">86%</div>
+        </div>
+
+
+        <p>graphic_design</p>
+        <div class="container">
+            <div class="skills graphic_design">60%</div>
+        </div>
+
+        <p>Mircosoft_excel</p>
+
+        <div class="container">
+            <div class="skills Mircosoft_excel ">60%</div>
+        </div>
+
+        <br>
+        <br>
+
+
+
+        <!-- Contact Form-->
+        <section id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2>Contact Me</h2>
+                        <p class="lead mb-5">What to join me! Fill the details!</p>
+                        <form id="contactForm" action="https://formspree.io/f/xbjqqnzy" method="POST">
+                            <div class="form-floating mb-3">
+                                <label for="name">Name <br> </label>
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name" required
+                                    name="name" />
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="email">Email: <br></label>
+                                <input class="form-control" id="email" type="email" placeholder="Enter your email"
+                                    required name="email" />
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="phone">Phone Number<br></label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number"
+                                    required name="phone" />
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="message">Message<br> </label>
+                                <input class="form-control" id="Message" type="text" placeholder="Write what you think"
+                                    required name="Message" />
+                            </div>
+                            <button class="btn btn-primary btn-xl" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <!--Footer -->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small">Designed and Developed by
+                            <a href="https://www.example.com/" target="_blank">SHREEYA DUMORE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!--Bootstrap JS file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"
+            integrity="sha512-c8Mv7VgU6kFakzthEnU6fjoUdBVkuBw1hOJxHszAT8vugK77sSU0efG9GEQAKkF/RNgvFUurvMxpmlf0Zh7i3Q=="
+            crossorigin="anonymous"></script>
+        </body>
+
+        </html>
